@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio | Xenix Electech Ltd.</title>
+        <link rel="icon" href="images/mini-logo.png" type="image/png" sizes="16x16">
+        <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="stylesheet" href="css/jquery.pagepiling.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- <section class="header" > -->
+            <!-- nav -->
+            <!-- <div class="logo">
+                <a href="home.html"><img src="images/logo.png" ></a>
+            </div>
+                <nav>
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="About.html">ABOUT</a></li>
+                            <li><a href="Products.html">PRODUCTS</a></li>
+                            <li><a href="Partner.html">PARTNER</a></li>
+                            <li><a href="Service.html">SERVICE</a></li>
+                            <li><a href="Contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <details>
+                        <summary></summary>
+                        <nav class="menu">
+                            <a href="About.html">ABOUT</a>
+                            <a href="Partner.html">PARTNER</a>
+                            <a href="Product">PRODUCTS</a>
+                            <a href="Service.html">SERVICE</a>
+                            <a href="Contact.html">CONTACT</a>
+                        </nav>
+                    </details>
+                </nav>
+        </section>         -->
+        <div id="pagepiling">
+            <div class="section sec1"><h2>Provincial Electrical Authority</h2></div>
+            <div class="section sec2"><h2>Provincial Electrical Authority</h2></div>
+            <div class="section sec3"><h2>Signalling Solutions</h2></div>
+            <div class="section sec4"><h2>Chevron Offshore | Generating Set - Gas</h2></div>
+            <div class="section sec5"><h2>Railway Product | Rail joints</h2></div>
+        </div>
+        
+            <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+            <script src="js/jquery.pagepiling.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function() {
+	                $('#pagepiling').pagepiling({navigation: {
+                        'textColor': '#fff',
+                        'bulletsColor': '#fff',
+                        'position': 'right',
+                        'tooltips': ['PEA', 'PEA', 'Thales', 'Chevron Offshore', 'Rail joints']
+                    },});
+                });
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
