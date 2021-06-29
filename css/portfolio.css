@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  *:before,*:after{
+    box-sizing: border-box;
+  }
+  h1{
+    font-size: 36px;
+    font-weight: 600;
+    padding-top: 100px;
+}
+h2{
+    font-weight: 600;
+    font-size: 14px;
+}
+  body{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    margin: 0;
+    /* font-family: 'Karla', sans-serif; */
+  }
+  .header{
+    position: absolute;
+    padding: 40px;
+    right: 0;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: .5s ease;
+  }
+  
+  /* nav */
+  nav{
+    width: 100%;
+    grid-gap : 0px;
+    margin-top: 20px;
+    margin-left: 0px;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+  }
+  .logo{
+    float: left;
+  }
+  .logo a img{
+    width: 230px;
+    margin: 0 10px;
+  }
+  summary{
+    display: block;
+  }
+  .nav-links{
+    margin-top: 18px;
+    flex: 5;
+    text-align: right;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-links ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #b31409;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: auto;
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+  }
+  
+  /* TOP */
+  #back-top {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+  }
+  
+  #back-top a {
+    display: block;
+    text-align: center;
+    font: 11px/100% Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight:bold;
+    opacity: 0.9;
+  
+    /* transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+  }
+  #back-top a:hover {
+    color: #000;
+  }
+  
+  /* arrow icon (span tag) */
+  #back-top span {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-bottom: 7px;
+    margin-left: 5px;
+    background: #ddd url(up-arrow.png) no-repeat center center;
+  
+    /* rounded corners */
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  
+    /* transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+  }
+  #back-top a:hover span {
+    background-color: #3d3d3d;
+  }
+  #back-top img{
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  }
+
+  #pagepiling .section{
+    text-align: center;
+  }
+  #pagepiling .section h2{
+    color: #fff;
+    font-size: 3em;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  }
+  #pagepiling .section.sec1{
+    background: url(https://www.img.in.th/images/da796d73f3d1193abf7ad21bde5e91e5.png);
+    background-size: cover;
+  }
+  #pagepiling .section.sec2{
+    background: url(https://www.img.in.th/images/2bb42b05c4fda27c5cfc4a4ae228e4aa.png);
+    background-size: cover;
+  }
+  #pagepiling .section.sec3{
+    background: url(https://www.img.in.th/images/ef88f9969065952b547f811304de92d3.png);
+    background-size: cover;
+  }
+  #pagepiling .section.sec4{
+    background: url(https://www.img.in.th/images/bfcfa85fb48bd6fa533023bc38c23695.png);
+    background-size: cover;
+  }
+  #pagepiling .section.sec5{
+    background: url(https://www.img.in.th/images/45659452211eb4d4143935c74986d93a.png);
+    background-size: cover;
+  }
+  #pp-nav li .active span, .pp-slidesNav .active span{
+      background: #fff;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  @media(max-width: 950px){
+    .nav-links{
+        display: none;
+    }
+  
+    :root {
+        --primColor: #dcdcdc;
+        --secoColor: #555555;
+        --cornerRad: 4px;
+      }
+    
+      details {
+        position: absolute;
+        z-index:9;
+        top:0;
+        right:10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+      summary {
+        writing-mode: vertical-lr;
+        text-align: center;
+        padding: 12px 10px;
+        width: 23px;
+        height: 17px;
+        color: #555555;
+        cursor: pointer;
+        user-select: none;
+        outline: none;
+        transition: transform 200ms ease-in-out 0s;
+        position: absolute;
+        z-index:9;
+        top:0;
+        right:20px;
+      }
+      summary::before,
+      summary::after {
+        position: static;
+        top: 0;
+        left: 0;
+      }
+      summary::before {
+        content: "";
+      }
+      summary::after {
+        content: "III";
+        letter-spacing: -1px;
+        font-size: 30px;
+      }
+      summary:hover {
+        transform: scale(1.1);
+      }
+      summary::marker {
+        font-size: 0;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      details[open] .menu {
+        animation-name: menuAnim;
+      }
+      details[open] summary::before {
+        content: "X";
+      }
+      details[open] summary::after {
+        content: "";
+      }
+      .menu {
+        height: 0;
+        width: fit-content;
+        border-radius: var(--cornerRad);
+        background-color: var(--primColor);
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+        margin-top: 75px;
+        margin-right: 42px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        animation: closeMenu 300ms ease-in-out forwards;
+      }
+      .menu a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        padding: 12px 24px;
+        margin: 0 16px;
+        color: var(--secoColor);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        text-align: center;
+        transition: filter 200ms linear 0s;
+      }
+      .menu a:nth-of-type(1) {
+        padding-top: 24px;
+      }
+      .menu a:nth-last-of-type(1) {
+        border-bottom: none;
+      }
+      .menu a:hover {
+        filter: brightness(200%);
+        color: #b31409;
+      }
+      @keyframes menuAnim {
+        0% {
+          height: 0;
+        }
+        100% {
+          height: 312px;
+        }
+      }
+      @keyframes fadeMe {
+        0% {
+          opacity: 0.4;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+  }
+  
+ 
