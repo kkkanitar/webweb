@@ -4,9 +4,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home | Xenix Electech Ltd.</title>
         <link rel="icon" href="images/mini-logo.png" type="image/png" sizes="16x16">
-        <link rel="stylesheet" href="css/home.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/home.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" 
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,33 +15,32 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <section class="showcase">
-            <header>
-                <div class="logo">
-                    <a href="home.html"><img src="images/logo.png" ></a>
+        <!-- ********************** nav ************************ -->
+        <div class="nav">
+                <a class="logo" href="home.html">
+                    <img src="images/logo.png" width="170px">
+                </a>
+
+                <div class="navbar-toggler" type="button" id="bar">
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
                 </div>
-                <nav>
-                    <div class="nav-links">
-                        <ul>
-                            <li><a href="About.html">ABOUT</a></li>
-                            <li><a href="Products.html">PRODUCTS</a></li>
-                            <li><a href="Partner.html">PARTNER</a></li>
-                            <li><a href="Service.html">SERVICE</a></li>
-                            <li><a href="Contact.html">CONTACT</a></li>
-                        </ul>
-                    </div>
-                    <details>
-                        <summary></summary>
-                        <nav class="menu">
-                            <a href="About.html">ABOUT</a>
-                            <a href="Partner.html">PARTNER</a>
-                            <a href="Product.html">PRODUCTS</a>
-                            <a href="Service.html">SERVICE</a>
-                            <a href="Contact.html">CONTACT</a>
-                        </nav>
-                      </details>
-                </nav>
-            </header>
+                
+                <div class="menu-bar" id="navbar">
+                    <ul class="menu-item">
+                        <li><a href="about.html">ABOUT </a></li>
+                        <li><a href="product.html">PRODUCTS</a></li>
+                        <li><a href="partner.html">PARTNER</a></li>
+                        <li><a href="service.html">SERVICE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        <section class="showcase">
+            <header></header>
+        <!-- ********************** head-shape ************************ -->
                 <video src="video/train2.mp4" muted loop autoplay></video>
                 <div class="overlay"></div>
 
@@ -50,9 +49,9 @@
                     <p>Our business goal is providing  the best product and service to our clients.</p>
                     <a href="About.html">Visit us to know more</a>
                 </div>
+            
         </section>
-
-
+        <!-- ********************** form ************************ -->
         <!-- service -->
         
         <div class="service">
@@ -75,6 +74,7 @@
            
         </div>
 
+        <!-- ********************** product ************************ -->
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -93,6 +93,7 @@
                 </div>
             </div>
 
+            <!-- ********************** partner ************************ -->
             <div class="partner"><a href="partner.html"><h1>Partner</h1></a></div>
             <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -142,6 +143,7 @@
             </script>
 
             
+        <!-- ********************** button b2t ************************ -->
             <p id="back-top">
                 <a href="#top">
                     <span style="color: white;" class="glyphicon glyphicon-arrow-up pondtoptoptop">
@@ -174,6 +176,10 @@
                 });
             });
             </script>
+
+        <!---------------- nav js ----------------->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+            <script src="js/script.js"></script>
 
         <!-- footer -->
         <footer class="footer">
@@ -215,6 +221,5 @@
                 <p>Copyright &copy; xenix electech co. Ltd. All right reserved.</p>
             </div>
         </footer>
-        
     </body>
 </html>
